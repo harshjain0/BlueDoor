@@ -1,0 +1,223 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Container for center alignment and padding */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background: #021ff6;
+    color: #fff;
+    padding: 20px 0;
+    font-family: 'Pacifico', cursive;
+}
+
+header h1 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Styles for the Features section */
+#features {
+    background: #03e3f8;
+    padding: 40px 0;
+}
+
+#features .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#features h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.feature-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+    animation: slideInLeft 2s ease-in-out;
+}
+
+.feature-item h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #021ff6;
+}
+
+.feature-item p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.feature-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    animation: slideInRight 2s ease-in-out;
+}
+
+.feature-image {
+    width: 400px;
+    height: 300px;
+    background-color: #150101;
+}
+
+/* About section styles */
+#about {
+    background-color: #03e3f8;
+    text-align: left;
+    padding: 40px 0;
+}
+
+#about .contact-info {
+    margin-top: 20px;
+}
+
+#about .contact-info li {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+#about .contact-info a {
+    color: #021ff6;
+    text-decoration: none;
+}
+
+#about .contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Book Now section styles */
+#book-now {
+    background: #03e3f8;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+#book-now .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#book-now h2.align-left {
+    align-self: flex-start;
+    margin-left: 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #021ff6;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#book-now p {
+    font-size: 18px;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#book-now form {
+    margin-top: 20px;
+}
+
+#book-now form input,
+#book-now form textarea,
+#book-now form button {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #021ff6;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#book-now form button {
+    background-color: #021ff6;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#book-now form button:hover {
+    background-color: #150101;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* Footer styles */
+footer {
+    background: #021ff6;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
